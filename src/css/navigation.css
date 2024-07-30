@@ -1,3 +1,15 @@
+.mobileMenu {
+  display: none;
+}
+
+.header .list {
+  display: none;
+}
+
+.header .list img {
+  display: none;
+}
+
 .header {
     position: absolute;
     display: flex;

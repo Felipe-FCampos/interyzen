@@ -14,12 +14,6 @@
   transition: 0.5s ease;
 }
 
-.fourHidden {
-  position: relative;
-  left: -100%;
-  transition: 0.5s ease;
-}
-
 .firstShow {
   position: relative;
   left: 0%;
@@ -33,12 +27,6 @@
 
 .thirdShow {
   padding-top: 0%;
-  transition: 0.5s ease;
-}
-
-.fourShow {
-  position: relative;
-  left: 0%;
   transition: 0.5s ease;
 }
 
@@ -72,12 +60,9 @@
 }
 
 .firstSection, .secondSection {
-  margin-block: 96px;
-}
-
-.firstSection {
   display: flex;
   align-items: center;
+  margin-block: 96px;
 }
 
 .firstSection .textImage {
@@ -93,11 +78,6 @@
 .firstSection .textImage p {
   font-size: 24px;
   padding-left: 256px;
-}
-
-.secondSection {
-  display: flex;
-  align-items: center;
 }
 
 .secondSection .textImage {
@@ -126,6 +106,10 @@
 
 .textImage h2 {
   font-size: 32px;
+}
+
+.carousel_mobile_items {
+  display: none;
 }
 
 .items {

@@ -1,38 +1,48 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { background, image_1, image_2, icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, paineis, painel_1, multimidia_1, logo } from '../assets/images';
+import { background, image_1, image_2, icon_1, icon_2, icon_3, icon_4, icon_5, icon_6, paineis, painel_1, multimidia_1, logo, list } from '../assets/images';
 import '../index.css'
+import Navigation from './navigation';
+import CarouselMobile from './carousel_mobile';
 
 
 function Home() {
+  // const [isOpen, setIsOpen] = useState(false)
+  let isOpen = false;
+
+  function toggleMenu(){
+    let sideBar = document.querySelector('.mobileMenu') as HTMLElement
+    // setIsOpen(true)
+    isOpen = true
+
+    if(isOpen == true){
+      sideBar.style.display = 'flex';
+    } else {
+      sideBar.style.display = 'none'
+    }
+  }
+
   const [firstClass, setFirstClass] = useState('firstHidden')
   const [secondClass, setSecondClass] = useState('secondHidden')
   const [thirdClass, setThirdClass] = useState('thirdHidden')
-  const [fourClass, setFourClass] = useState('fourHidden')
-
+  
   function handleScroll() {
-    if (document.documentElement.scrollTop > 430) {
+    if (document.documentElement.scrollTop > 230) {
       setFirstClass('firstShow');
     } else {
       setFirstClass('firstHidden');
     }
 
-    if (document.documentElement.scrollTop > 1060) {
+    if (document.documentElement.scrollTop > 460) {
       setSecondClass('secondShow');
     } else {
       setSecondClass('secondHidden');
     }
 
-    if (document.documentElement.scrollTop > 1490) {
+    if (document.documentElement.scrollTop > 1690) {
       setThirdClass('thirdShow')
     } else {
       setThirdClass('thirdHidden')
-    }
-
-    if (document.documentElement.scrollTop > 2560) {
-      setFourClass('fourShow')
-    } else {
-      setFourClass('fourHidden')
     }
   };
 
@@ -45,9 +55,14 @@ function Home() {
 
   return (
     <>
-      <div>
-
+      <div className='body'>
+      <div className="mobileMenu">
+            <Navigation/>
+        </div>
         <div className="header">
+          <div className="list"  onClick={toggleMenu}>
+            <img src={list} alt="" />
+          </div>
           <div className="topLogo">
             <img src={logo} alt="" />
           </div>
@@ -68,7 +83,7 @@ function Home() {
           <p>Conheça nossos painéis inteligentes e adaptáveis que foram feitos para se adequarem a você.</p>
         </div>
 
-        <body>
+        <div>
           <section className={`firstSection ${firstClass}`}>
             <div className="image">
               <img src={image_1} alt="" />
@@ -87,6 +102,10 @@ function Home() {
             <div className="image">
               <img src={image_2} alt="" />
             </div>
+          </section>
+
+          <section className='carousel_mobile_items'>
+          <CarouselMobile />
           </section>
 
           <section className={`items ${thirdClass}`}>
@@ -116,7 +135,7 @@ function Home() {
             </div>
           </section>
 
-          <section className={`knowTheProduct ${fourClass}`}>
+          <section className="knowTheProduct">
             <div className='product'>
               <h1>Explore agora</h1>
               <img src={paineis} alt="" />
@@ -146,7 +165,7 @@ function Home() {
               <button><Link to='/multimedia'>Saiba mais</Link></button>
             </div>
           </section>
-        </body>
+        </div>
         <footer>
           <section>
             <div className="logo">

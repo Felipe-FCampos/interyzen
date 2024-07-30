@@ -28,6 +28,12 @@ import volkswagen from './images/icons_logo/Frame-2.svg';
 import bmw from './images/icons_logo/Frame.svg';
 import hyundai from './images/icons_logo/Layer_1.svg';
 import mercedes from './images/icons_logo/svg3544.svg';
+import home from './images/icons_menu/home.svg';
+import display from './images/icons_menu/display.svg';
+import connection from './images/icons_menu/connection.svg';
+import phone from './images/icons_menu/phone.svg';
+import x from './icons/exit.svg';
+import list from './images/list_inteRyzen.svg';
 
 // Panels
 import paineis from './images/paineis.svg';
@@ -77,6 +83,12 @@ export {
     hyundai,
     mercedes,
     bmw,
+    home,
+    display,
+    connection,
+    phone,
+    x,
+    list,
 
     paineis,
     painel_1,

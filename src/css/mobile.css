@@ -1,0 +1,230 @@
+@media (min-width: 375px) and (max-width: 576px){  
+
+    /* - - - - - - - - - - - - - - - - Background - - - - - - - - - - - - - - - - */
+
+    .background {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background-color: #000;
+        z-index: -1;
+        opacity: 50%;
+    }
+
+    /* - - - - - - - - - - - - - - - - mobile menu int home.tsx - - - - - - - - - - - - - - - - */
+
+    .mobileMenu {
+        position: fixed;
+        top: 0%;
+        width: 50%;
+        height: 100%;
+        display: none;
+        z-index: 1000;
+    }
+
+    .sideBarNavigation {
+        background-color: #f7f7f7;
+        width: 140%;
+        height: 100%;
+    }
+
+    .sideBarNavigation li {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        padding-block: 12px;
+        padding-left: 32px;
+    }
+
+    .sideBarNavigation p {
+        margin-left: 8px;
+    }
+
+    .sideBarNavigation hr {
+        height: 1px;
+        margin-left: 24px;
+        border: none;
+        background-color: #181818;
+    }
+
+    .sideBarNavigation a {
+        text-decoration: none;
+        color: #181818;
+    }
+
+    .sideBarNavigation .exit {
+        padding: 8px;
+    }
+
+    .sideBarNavigation .exit img {
+        width: 40px;
+    }
+
+    /*- - - - - - - - - - - - - - - -  header - - - - - - - - - - - - - - - - */
+
+    .header .list {
+        display: flex;
+      }
+
+    .header .list img {
+        display: flex;
+        width: 48px;
+        margin-left: -32px;
+    }
+
+    .header .topLogo {
+        display: none;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    /*- - - - - - - - - - - - - - - -  main - - - - - - - - - - - - - - - - */
+
+    .main img {
+        display: none;
+    }
+ 
+    .main {
+        display: flex;
+        width: 100%; 
+        height: 375px;
+        background-image: url('../assets/images/background_home.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /*- - - - - - - - - - - - - - - -  title content - - - - - - - - - - - - - - - - */
+
+    .titleContent {
+        position: absolute;
+        top: 96px;
+        left: 32px;
+    }
+
+    .titleContent h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .titleContent p {
+        font-size: 16px;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+
+    /*- - - - - - - - - - - - - - - -  sections - - - - - - - - - - - - - - - - */
+
+    .firstSection .image img {
+        width: 100%;
+        border-radius: 0px 24px 24px 0px;
+    }
+
+    .firstSection .textImage {
+        margin-right: 16px;
+    }
+
+    .firstSection .textImage h2 {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .firstSection .textImage p {
+        font-size: 10px;
+        padding-left: 20px;
+    }
+
+    .secondSection .textImage {
+        margin-left: 16px;
+    }
+
+    .secondSection .textImage h2 {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+
+    .secondSection .image img {
+        width: 100%;
+        border-radius: 24px 0px 0px 24px;
+    }
+
+    .secondSection .textImage p {
+        font-size: 10px;
+        padding-right: 20px;
+    }
+
+    .items {
+        display: none;
+    } 
+
+    .carousel_mobile_items {
+        display: flex;
+    }
+
+    .itemA, .itemB {
+        border-radius: 24px;
+        width: 100%;
+        padding-block: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itemA img, .itemB img {
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 128px;
+    }
+
+    .itemA p, .itemB p {
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+
+
+
+    .knowTheProduct .product h1 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .knowTheProduct .product img {
+        width: 80%;
+    }
+
+
+
+    .productCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productCard .card {
+        width: 80%;
+        margin-bottom: 64px;
+    }
+
+    .productCard .card button {
+        width: 40%;
+        height: 10%;
+        font-size: 14px;
+    }
+
+    .productCard .card .cardImage img {
+        width: 100%;
+    }
+
+    footer .menuFooter {
+        display: none;
+    }
+
+
+    .contact p {
+        font-size: 16px;
+    }
+}
