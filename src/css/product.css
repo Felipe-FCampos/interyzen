@@ -30,6 +30,10 @@
     background-color: #f7f7f7;
 }
 
+.headerProduct .list {
+    display: none;
+}
+
 .headerProduct nav {
     display: flex;
     justify-content: space-between;
@@ -41,7 +45,7 @@
 .headerProduct a {
     text-decoration: none;
     color: #181818;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1px;
 }
   
@@ -62,7 +66,6 @@
 }
   
 .textImageProduct h2, .secondTextImageProduct h2 {
-    font-size: 48px;
     padding-right: 200px;
     font-family: 'Roboto', sans-serif;
     font-size: 64px;

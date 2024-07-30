@@ -1,17 +1,41 @@
 // import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { audi, background_panel, bmw, control, dark_logo, hyundai, image_cars, image_sunset, interface_func, logo, mercedes, monitoring, multimidia_1, p1, p2, p3, panel, volkswagen } from '../assets/images';
+import { audi, background_panel, bmw, control, dark_logo, hyundai, image_cars, image_sunset, interface_func, list, logo, mercedes, monitoring, multimidia_1, p1, p2, p3, panel, volkswagen } from '../assets/images';
 import '../index.css'
 import Carousel from './carousel';
+import Navigation from './navigation';
 
 function Painel() {
   // const [count, setCount] = useState(0)
+
+    // const [isOpen, setIsOpen] = useState(false)
+    let isOpen = false;
+
+    function toggleMenu(){
+      let sideBar = document.querySelector('.mobileMenu') as HTMLElement
+      // setIsOpen(true)
+      isOpen = true
+  
+      if(isOpen == true){
+        sideBar.style.display = 'flex';
+      } else {
+        sideBar.style.display = 'none'
+      }
+    }
+
+
   const images = [p1, p2, p3];
 
   return (
     <>
-      <div>
+      <div className='body'>
+        <div className="mobileMenu">
+          <Navigation />
+        </div>
         <div className="headerProduct">
+          <div className="list" onClick={toggleMenu}>
+            <img src={list} alt="" />
+          </div>
           <div className="topLogo">
             <img src={dark_logo} alt="" />
           </div>
@@ -23,7 +47,7 @@ function Painel() {
           </nav>
         </div>
 
-        <div className='main'>
+        <div className='mainProduct'>
           <img src={background_panel} alt="" />
         </div>
 
@@ -31,7 +55,7 @@ function Painel() {
           <h1>InteRyzen <b>Nexus</b></h1>
         </div>
 
-        <body>
+        <div>
           <section className="firstSection">
             <div className="textImageProduct">
               <h2><i>InteRyzen <b>Nexus</b></i></h2>
@@ -73,7 +97,7 @@ function Painel() {
           </section>
 
           <section className="carousel">
-            <div className='main'>
+            <div className='mainCarousel'>
               <Carousel images={images} />
             </div>
           </section>
@@ -122,7 +146,7 @@ function Painel() {
             </div>
           </section>
 
-        </body>
+        </div>
         <footer>
           <section>
             <div className="logo">

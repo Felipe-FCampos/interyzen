@@ -33,6 +33,10 @@
 .main img {
     width: 100%;
 }
+
+.mainProduct img {
+  width: 100%;
+}
   
 .titleContent {
     position: absolute;
