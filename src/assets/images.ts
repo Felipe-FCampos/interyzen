@@ -34,6 +34,7 @@ import connection from './images/icons_menu/connection.svg';
 import phone from './images/icons_menu/phone.svg';
 import x from './icons/exit.svg';
 import list from './images/list_inteRyzen.svg';
+import dark_list from './images/dark_list.svg';
 
 // Panels
 import paineis from './images/paineis.svg';
@@ -89,6 +90,7 @@ export {
     phone,
     x,
     list,
+    dark_list,
 
     paineis,
     painel_1,

@@ -1,15 +1,36 @@
 // import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { dark_logo, email, logo } from '../assets/images';
+import { dark_list, dark_logo, email, logo } from '../assets/images';
 import '../index.css'
+import Navigation from './navigation';
 
 function Contato() {
     // const [count, setCount] = useState(0)
 
+    let isOpen = false;
+
+    function toggleMenu() {
+        let sideBar = document.querySelector('.mobileMenu') as HTMLElement
+        // setIsOpen(true)
+        isOpen = true
+
+        if (isOpen == true) {
+            sideBar.style.display = 'flex';
+        } else {
+            sideBar.style.display = 'none'
+        }
+    }
+
     return (
         <>
-            <div>
+            <div className='body'>
+                <div className="mobileMenu">
+                    <Navigation />
+                </div>
                 <div className="contactHeader">
+                    <div className="list" onClick={toggleMenu}>
+                        <img src={dark_list} alt="" />
+                    </div>
                     <div className="topLogo">
                         <img src={dark_logo} alt="" />
                     </div>
@@ -21,7 +42,7 @@ function Contato() {
                     </nav>
                 </div>
 
-                <body>
+                <div>
                     <div className='element'>
                         <h1>Precisa de ajuda?</h1>
                         <p>Entre em contato conosco através dos nosso canal de atendimento </p>
@@ -29,7 +50,7 @@ function Contato() {
 
                     <div className="mini_element"></div>
 
-                    <section className='background'>
+                    <section className='backgroundContact'>
 
                     </section>
                     <section className='sendEmail'>
@@ -43,7 +64,7 @@ function Contato() {
                     </section>
 
                     <div className="second_mini_element"></div>
-                </body>
+                </div>
                 <footer>
                     <section>
                         <div className="logo">

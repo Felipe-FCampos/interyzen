@@ -1,0 +1,102 @@
+@media (min-width: 350px) and (max-width: 576px){  
+    .contactHeader .topLogo {
+        display: none;
+    }
+
+    .contactHeader nav {
+        display: none;
+    }
+
+    .contactHeader .list {
+        display: flex;
+        margin-left: -30px;
+    }
+
+    .contactHeader .list img {
+        display: flex;
+    }
+
+    .element {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        height: 184px;
+        width: 300px;
+        background-color: #181818;
+        border-radius: 8px;
+        padding-block: 1.5rem;
+        padding-inline: 1rem;
+    }
+
+    .element h1 {
+        color: #f7f7f7;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+    }
+    
+    .element p {
+        color: #f7f7f7;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    .mini_element {
+        position: absolute;
+        top: 18.3%;
+        left: 10%;
+        border-radius: 4px;
+        width: 128px;
+        height: 32px;
+        background-color: #181818;
+    }
+    
+    .second_mini_element {
+        position: absolute;
+        bottom: 42.6%;
+        right: 10%;
+        border-radius: 4px;
+        width: 128px;
+        height: 32px;
+        background-color: #181818;
+    }
+
+    .backgroundContact {
+        background-color: white;
+        height: 380px;
+        width: 100%;  
+    }
+
+    .sendEmail {
+        display: flex;
+        justify-content: space-around;
+        background-color: #d9d9d9;
+        height: 480px;
+        width: 100%;
+    }
+
+    .sendEmail img {
+        display: none;
+    }
+    
+    .sendEmail form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 64px;
+        width: 300px;
+    }
+    
+    .sendEmail input {
+        background-color: #f0f0f0;
+        border: none;
+        border-bottom: 1px solid #181818; 
+        height: 48px;
+        font-size: 14px;
+        padding-inline: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        border-radius: 4px 4px 0 0;
+        margin-bottom: 16px;
+    }
+}
