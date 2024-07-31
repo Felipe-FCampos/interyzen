@@ -99,7 +99,11 @@
   padding-right: 256px;
 }
 
-.image img {
+.firstSection .image img {
+  width: 600px;
+}
+
+.secondSection .image img {
   width: 600px;
 }
 

@@ -74,15 +74,15 @@ function Multimidia() {
                     </section>
 
                     <section className="carousel">
-                        <div className='main'>
+                        <div className='mainCarousel'>
                             <Carousel images={images} />
                         </div>
                     </section>
 
-                    <section className='secondSection'>
+                    <section className='secondSectionProduct'>
                         <div className="textImageProduct">
                             <p>Experimente uma condução mais confortável e conectada com </p>
-                            <h2><i>InteRyzen <b>Nexus</b></i></h2>
+                            <h2><i>InteRyzen <b>Pulse</b></i></h2>
                         </div>
                         <div className="image">
                             <img src={image_stopped_car} alt="" />

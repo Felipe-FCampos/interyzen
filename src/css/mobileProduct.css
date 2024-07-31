@@ -40,7 +40,7 @@
     
     .titleContentProduct {
         position: absolute;
-        top: 6%;
+        top: 5.2%;
         left: 5%;
         font-size: 22px;
     }
@@ -55,9 +55,10 @@
         font-weight: 400;
     }
     
-    .firstSection {
+    .firstSectionProduct {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .textImageProduct {
@@ -67,19 +68,30 @@
     
     .secondTextImageProduct {
         text-align: end;
+        margin-top: -48px;
         margin-left: 16px;
+        margin-right: 16px;
+        width: 100%;
     }
     
-    .textImageProduct, .secondTextImageProduct {
+    .textImageProduct {
         margin-top: -48px;
+        margin-left: 16px;
         width: 100%;
     }
 
-    .textImageProduct h2, .secondTextImageProduct h2 {
+    .textImageProduct h2 {
         font-size: 48px;
         font-family: 'Roboto', sans-serif;
         padding-right: 0px;
-      }
+    }
+
+    .secondTextImageProduct h2 {
+        font-size: 36px;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 32px;
+        padding-right: 0px;
+    }
     
     .textImageProduct i, .secondTextImageProduct i {
         font-weight: 200;
@@ -89,16 +101,34 @@
         font-weight: 500;
       }
       
-    .textImageProduct p, .secondTextImageProduct p {
+    .textImageProduct p {
         margin-top: 12px;
         font-size: 22px;
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
         padding-right: 0px;
       }
+    
+    .secondTextImageProduct p {
+        margin-top: 12px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        padding-right: 0px;
+        padding-left: 64px;
+    }
 
-    .image {
+    .firstSectionProduct .image {
         margin-top: 16px;
+    }
+
+    .firstSectionProduct .image img {
+        width: 100%;
+    }
+
+    .secondSectionProduct .image img {
+        width: 120%;
+        border-radius: 0 24px 24px 0;
     }
 
     .functionalities {
@@ -148,5 +178,49 @@
         margin-bottom: 184px;
     }
 
+
+    .compatibilities {
+        display: flex;
+        flex-direction: column;
+        margin-top: 128px;
+        margin-bottom: 184px;
+    }
+    
+    .compatibilities h1 {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 64px;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        font-weight: 200;
+        color: #181818;
+    }
+    
+    .marks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: #eeeeee;
+    }
+    
+    .marks img {
+        width: 100px;
+        padding-block: 24px;
+    }
+
+    .lastSection .image img {
+        width: 115%;
+        border-radius: 24px 0 0 24px;
+    }
+
+    .lastSection .textImageProduct h2 {
+        font-size: 32px;
+    }
+
+    .lastSection .textImageProduct p {
+        font-size: 16px;
+    }
     
 }

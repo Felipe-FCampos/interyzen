@@ -56,7 +56,7 @@ function Painel() {
         </div>
 
         <div>
-          <section className="firstSection">
+          <section className="firstSectionProduct">
             <div className="textImageProduct">
               <h2><i>InteRyzen <b>Nexus</b></i></h2>
               <p>É um painel digital de última geração.</p>
@@ -102,7 +102,7 @@ function Painel() {
             </div>
           </section>
 
-          <section className='secondSection'>
+          <section className='secondSectionProduct'>
             <div className="image">
               <img src={image_sunset} alt="" />
             </div>

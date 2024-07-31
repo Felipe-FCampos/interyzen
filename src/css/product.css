@@ -55,6 +55,20 @@
 
 /* Sections */
 
+.firstSectionProduct, .secondSectionProduct {
+    display: flex;
+    align-items: center;
+    margin-block: 96px;
+  }
+  
+  .firstSectionProduct .image img {
+    width: 600px;
+  }
+  
+  .secondSectionProduct .image img {
+    width: 600px;
+  }
+
 .textImageProduct {
     text-align: start;
     margin-left: 128px;
