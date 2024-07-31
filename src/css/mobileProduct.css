@@ -63,7 +63,8 @@
 
     .textImageProduct {
         text-align: start;
-        margin-left: 16px;
+        margin-left: 0px;
+        padding-left: 16px;
       }
     
     .secondTextImageProduct {
@@ -76,7 +77,6 @@
     
     .textImageProduct {
         margin-top: -48px;
-        margin-left: 16px;
         width: 100%;
     }
 
@@ -127,7 +127,7 @@
     }
 
     .secondSectionProduct .image img {
-        width: 120%;
+        width: 100%;
         border-radius: 0 24px 24px 0;
     }
 
@@ -192,7 +192,6 @@
         margin-bottom: 64px;
         font-size: 24px;
         font-family: 'Roboto', sans-serif;
-        font-size: 32px;
         font-weight: 200;
         color: #181818;
     }
@@ -211,8 +210,9 @@
     }
 
     .lastSection .image img {
-        width: 115%;
+        width: 100%;
         border-radius: 24px 0 0 24px;
+        padding-left: 16px;
     }
 
     .lastSection .textImageProduct h2 {
