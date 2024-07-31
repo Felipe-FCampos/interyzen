@@ -27,7 +27,7 @@ function Home() {
   const [thirdClass, setThirdClass] = useState('thirdHidden')
   
   function handleScroll() {
-    if (document.documentElement.scrollTop > 230) {
+    if (document.documentElement.scrollTop > 100) {
       setFirstClass('firstShow');
     } else {
       setFirstClass('firstHidden');
