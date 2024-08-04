@@ -6,6 +6,7 @@ import Multimidia from './components/multimidia'
 import Contato from './components/contact'
 
 function Router() {
+
   return (
     <Routes>
         <Route path="/" element={<Home />} />
