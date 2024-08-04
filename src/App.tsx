@@ -4,7 +4,7 @@ import Router from './routes'
 
 function App() {
 
-  console.log("v5.6")
+  console.log("v5.7")
 
   return (
     <div>

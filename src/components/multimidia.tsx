@@ -1,18 +1,37 @@
 // import { useState } from 'react'
 // import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { audi, background_multimedia, bmw, dark_logo, hyundai, image_cars, image_stopped_car, interface_func, logo, m1, m2, mercedes, multimedia, painel_1, ultraMonitoring, volkswagen, wifi } from '../assets/images';
+import { audi, background_multimedia, bmw, dark_logo, hyundai, image_cars, image_stopped_car, interface_func, list, logo, m1, m2, mercedes, multimedia, painel_1, ultraMonitoring, volkswagen, wifi } from '../assets/images';
 import '../index.css'
 import Carousel from './carousel';
 
 function Multimidia() {
     // const [count, setCount] = useState(0)
+
+    // const [isOpen, setIsOpen] = useState(false)
+    let isOpen = false;
+
+    function toggleMenu() {
+        let sideBar = document.querySelector('.mobileMenu') as HTMLElement
+        // setIsOpen(true)
+        isOpen = true
+
+        if (isOpen == true) {
+            sideBar.style.display = 'flex';
+        } else {
+            sideBar.style.display = 'none'
+        }
+    }
+
     const images = [m1, m2];
 
     return (
         <>
             <div>
                 <div className="headerProduct">
+                    <div className="list" onClick={toggleMenu}>
+                        <img src={list} alt="" />
+                    </div>
                     <div className="topLogo">
                         <img src={dark_logo} alt="" />
                     </div>
@@ -24,7 +43,7 @@ function Multimidia() {
                     </nav>
                 </div>
 
-                <div className='main'>
+                <div className='mainProduct'>
                     <img src={background_multimedia} alt="" />
                 </div>
 
