@@ -56,7 +56,7 @@
 .mainProductMedia {
     display: flex;
     width: 100%; 
-    height: 775px;
+    height: 755px;
     background-image: url('../assets/images/background_multimedia.svg');
     background-size: cover;
     background-position: center;
